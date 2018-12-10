@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Условия возврата товара</title> 
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+
+	
+	<link rel="stylesheet" href="css\reset.css">
+	<link rel="stylesheet" href="css\jquery-ui.css">
+	<link rel="stylesheet" href="libs\bootstrap\bootstrap-grid-3.3.1.min.css">
+	<link rel="stylesheet" href="libs\font-awesome-4.2.0\css\font-awesome.min.css">
+	<link rel="stylesheet" href="libs\fancybox\jquery.fancybox.css">
+	<link rel="stylesheet" href="libs\owl-carousel\owl.carousel.css">
+	<link rel="stylesheet" href="libs\owl-carousel\owl.theme.default.css">
+	<link rel="stylesheet" href="libs\countdown\jquery.countdown.css">
+	<link rel="stylesheet" href="css\fonts.css">
+	<link rel="stylesheet" href="css\main2.css">
+	<link rel="stylesheet" href="css\media.css">
+
+	
+	
+	<script src="libs\jquery\jquery-1.11.1.min.js"></script>
+	<script src="js\jquery.lockfixed.min.js"></script>
+		
+
+
+ 	
+
+<script>
+	function SendComagic(name,tel,type,txt)
+	{
+	try {
+			if (txt=='')
+			{		
+				Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
+			}
+			else
+			{
+				Comagic.push(['addOfflineRequest', {name: name,  phone: tel, email: txt , message: type }]);
+			}
+		} catch(err){
+		return false;
+        }	
+				
+		}
+	
+</script><script>
+  $(function() {
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+        document.body.addEventListener('gesturestart', function () {
+          viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+        }, false);
+      }
+    }
+	
+  })
+</script>
+
+
+	
+</head>
+<body>
+<div class="toptop"></div>
+	<div id="popup1" class="popup1">
+		<div id="btn-close" class="f-close"> </div>
+		<div class="header ">ЗАКАЗАТЬ ЗВОНОК</div> 
+		<div class="header_sub"></div> 
+		
+		<input type="hidden" class="pop_type" value="">
+                <div class="razmetka1">
+                    <div class="low_name">
+                      <input class="pop_name" type="text" placeholder='Ваше имя' value=''>
+                    </div>
+                </div>
+		 <div class="razmetka1">
+                    <div class="low_email">
+                        <input class="pop_tel" type="text" placeholder='Телефон' value=''>
+                    </div>
+                 </div>
+      
+        
+                <div class="blue_btn">
+                    <a id="callback-send1">Жду звонка</a>
+                </div>
+		 
+	</div> 
+	<div id="spasibo" class="spasibo">
+		<div class="header">СПАСИБО!</div> 
+		<div class="p1_msg">
+			Ваша заявка отправлена успешно.
+		</div>
+
+		<a id="callback-spasibo" class="btn b_red">ЗАКРЫТЬ</a>
+		 
+	</div>    
+
+
+
+	<div id="pozdr" class="pozdr">
+		<div id="btn-close" class="f-close"> </div>
+		<div class="header ">ПОЗДРАВЛЯЕМ</div> 
+		<div class="header_sub">
+			Вы стали победителем ежедневного розыгрыша среди посетителей сайта!
+			Заполните форму ниже и получите дополнительную скидку 10%!
+ 		</div>
+                 <div class="razmetka1">
+                    <div class="low_name">
+                        <input class="pozdr_name" type="text" value='' placeholder="Ваше имя">
+                    </div>
+                 </div>
+                <div class="razmetka1">
+                    <div class="low_tel">
+                        <input class="pozdr_tel" type="text" value='' placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="blue_btn">
+                    <a id="callback-pozdr">Отправить</a>
+                </div>
+		
+		 <div class="sec">Окно закроется через <span id="sec">60</span> секунд</div>
+	</div> 		
+	
+	<div id="hide-layout" class="hide-layout"></div>
+	<div id="hide-layout_pozdr" class="hide-layout"></div>
+
+
+     
+ 
+
+		
+
+<div class="section s_top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12  clearfix padding0">
+				<div class="col-sm-6 col-md-4 col-xs-6 logo">
+                                    <a href="index.html"><img src="img\logo2.png"></a>
+				</div>
+				<div class="col-sm-6 col-md-8 col-xs-6">
+					<div class="row">
+						<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+							<div class="moscow">
+								Москва<br>
+								<span class="under">- - - - - - - - - -</span>
+							</div>	
+						</div>
+						<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+							<div class="rasprod">
+                                                            <a href="skidki_na_potolki.html">Распродажа</a><br>
+							<!--	<span class="under">- - - - - - - - - - - -</span> -->
+							</div>	
+						</div>
+						<div class="hidden-sm col-md-12 col-lg-6 hidden-xs ">
+							<div class="tel">
+								<p class="">
+									<a class="comagic_phone" href="tel:+74952367999" style="text-decoration:none;">8 (495) 236-79-99</a>
+									
+								</p>
+								<div class="call" onclick="callback_tel();  return false;">Вам перезвонить?
+									</div>
+							</div>
+						</div>  
+						<div class="col-sm-12 hidden-md hidden-lg col-xs-12 mmenu">
+							Меню<img src="img\mmenu.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 padding0">
+							<div class="menu clearfix">
+								<div class="dop_menu clearfix">
+									<a href="#" onclick="callback_zamer();  return false;"><img src="img\m1.png"><span>Замер</span></a>
+									<a href="potolki_v_rassrochku.html"><img src="img\m2.png"><span>Рассрочка</span></a>
+									<a href="skidki_na_potolki.html"><img src="img\m3.png"><span>Акции</span></a>
+									<a href="gde_kupit_potolki.html"><img src="img\m4.png"><span>Контакты</span></a>
+									
+								</div>
+								<a href="#" class="m_close"><img src="img\m_close.png"></a>
+								<ul>
+									<li>
+										<div style="margin-right: 16px; margin-left: 5px;">Натяжные потолки</div>
+										<ul style="left:5px">
+											<li><div><a href="matovye_potolki.html">Матовые потолки</a></div></li>
+											<li><div><a href="glyancevye_potolki.html">Глянцевые потолки</a></div></li>
+											<li><div><a href="tkanevye_potolki.html">Тканевые потолки</a></div></li>
+											<li><div><a href="mnogourovnevye_potolki.html">Многоуровневые потолки</a></div></li>
+											<li><div><a href="potolki_fotopechat.html">Потолки с фотопечатью</a></div></li>
+											<li><div><a href="potolki_zvezdnoe_nebo.html">Потолки "Звездное небо"</a></div></li>
+										</ul>
+									
+									</li>
+									<li><div class="dop_css1"><a href="natjazhnye_potolki_kalkuljator.html">Цены на потолки</a></div>
+                                                                            <ul>
+                                                                                <li><div><a href="gotovye_potolki.html">Готовые потолки</a></div></li>
+                                                                            </ul>
+                                                                        </li>
+									<li><div><a href="o_kompanii.html">О компании</a></div></li>
+									<li class="noseparator m_last"><div><a href="gde_kupit_potolki.html">Контакты</a></div></li>
+								</ul>
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="b_line">
+					<div class="menu_place clearfix">
+						<div class="tel">
+							<a class="comagic_phone" href="tel:+74952367999" style="text-decoration:none;">8 (495) 236-79-99</a>
+						</div>
+						<div class="call" onclick="callback_tel(); return false;">Вам перезвонить?</div>
+						
+						<div class="trubka">
+							<a href="tel:+74952367999">
+								<img src="img\trubka.png">
+							</a>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="probel">
+</div>
+
+
+
+<script>
+$(".mmenu").click(function(){
+	if (!$(".menu").hasClass('show'))
+	{
+		$(".menu").addClass('show');
+	}
+});
+
+$(".m_close").click(function(){
+	$(".menu").removeClass('show');
+	return false;
+})
+
+
+</script>
+	
+                            
+<div class="section s_standart">
+	<div class="container">
+		<div class="row">
+                    <div class="col-md-12  clearfix">
+				<h2>Сроки и условия возврата и обмена товаров</h2>	
+				<h3>1. Возврат и обмен товара надлежащего качества</h3>
+				<p class="light">
+
+а) Согласно статьи 25 закона «О защите прав потребителей» заказчик вправе обменять товар надлежащего качества на аналогичный товар, если указанный товар не подошел по форме, габаритам, фасону, расцветке, размеру или комплектации. <br>
+Потребитель имеет право на обмен товара надлежащего качества в течение 14 дней, не считая дня его покупки.<br>
+Обмен товара надлежащего качества производится, если указанный товар не был в употреблении, сохранены его товарный вид, потребительские свойства, пломбы, фабричные ярлыки, а также товарный чек или кассовый чек, выданные потребителю вместе с проданным указанным товаром.<br><br>
+В случае, если аналогичный товар отсутствует в продаже на день обращения заказчику будут возращены денежные средства в течение 14 рабочих дней со дня обращения. Подробнее о возврате денежных средств для товаров надлежащего качества описаны в п. 1.1.
+<br><br>
+б) Возврат товара надлежащего качества возможен в течение 14 дней, не считая дня его покупки.<br>
+При возврате товара надлежащего качества должны быть сохранены: комплектация, товарный вид изделия, товарный вид упаковки. Изделие не должно иметь следов эксплуатации.<br>
+Возврат денежных средств производится в течение 14 рабочих дней со дня обращения. Подробнее о возврате денежных средств для товаров надлежащего качества описаны в п. 1.1.
+</p>
+<br>
+<p>
+Возврат или обмен товара осуществляется в день обращения в центральном офисе компании по адресу: Москва, ул. Угрешская, д. 2, стр. 35.
+</p>
+
+<h3>1.1. Возврат денежных средств для товаров надлежащего качества</h3>
+<p class="light">
+Возврат денежных средств для товаров надлежащего качества производится только по реквизитам физического или юридического лица, производившего оплату товара.
+</p>
+<br>
+<p class="light">
+Возврат осуществляется в течение 14 рабочих дней со дня обращения путем безналичного перечисления денежных средств по реквизитам заказчика.
+</p><br>
+<p class="light italic">
+При возврате либо обмене товара надлежащего качества заказчик компенсирует продавцу стоимость доставки, если таковая предусматривалась договором купли-продажи.
+</p><br>
+<hr>
+<h3>2. Возврат и обмен товара ненадлежащего качества</h3>
+<p class="light">
+При выявлении у приобретенного изделия недостатков заказчик вправе по своему выбору:</p>
+<ul class="light">
+<li>&#8226; отказаться от товара;</li>
+<li>&#8226; потребовать замены купленного товара на товар этой же или другой модели (с перерасчетом стоимости);</li>
+<li>&#8226; потребовать уменьшения цены товара или безвозмездного устранения недостатков товара.</li>
+</ul>
+<p class="light">
+Эти требования заказчик вправе предъявить при обнаружении недостатков как при приемке, так и в течение гарантийного срока (6 месяцев со дня покупки).
+<br><br>
+В случая отказа от товара и расторжении договора купли-продажи заказчику возвращаются денежные средства уплаченные за товар. Возврат денежных средств производится в течение 5 рабочих дней со дня обращения. Подробнее о возврате денежных средств для товаров ненадлежащего качества описаны в п. 2.1.
+<br><br>
+<p>
+Возврат или обмен товара осуществляется в день обращения в центральном офисе компании по адресу: Москва, ул. Угрешская, д. 2, стр. 35.
+</p>
+<h3>2.1. Возврат денежных средств для товаров ненадлежащего качества</h3>
+<p class="light">
+Возврат денежных средств для товаров ненадлежащего качества производится только по реквизитам физического или юридического лица, производившего оплату товара.
+</p>
+<br>
+<p class="light">
+Возврат осуществляется в течение 5 рабочих дней со дня обращения путем безналичного перечисления денежных средств по реквизитам заказчика.
+</p><br><br>
+
+
+<p class="light italic">
+При возврате либо обмене товара ненадлежащего качества заказчик компенсирует продавцу стоимость доставки, если таковая предусматривалась договором купли-продажи.
+</p><br>
+<hr><br>
+<p class="light italic">
+По всем вопросам возврата или обмена товаров, а также возврата денежных средств необходимо обратиться по телефону: <nobr>8 (495) 236-79-99</nobr> или по электронной почте info@nedorogiepotolki.ru
+
+				</p>
+				
+				
+			</div>			
+		</div>
+        </div>
+</div>
+
+
+	
+		<div class="section s23">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12  clearfix">
+						<div class="footer_menu">
+							
+								<div class="col-sm-3 col-xs-6">
+									<div class="f_block fm1">
+										<a href="natjazhnye_potolki_kalkuljator.html">Расчет онлайн</a>
+									</div>
+								</div>
+					
+								<div class="col-sm-3 col-xs-6 ">
+									<div class="f_block fm2">
+										<a href="skidki_na_potolki.html">Как сэкономить</a>
+									</div>	
+								</div>
+						
+								<div class="col-sm-3 col-xs-6">
+									<div class="f_block fm3">
+										<a href="potolki_v_rassrochku.html">Купить в рассрочку</a>
+									</div>
+								</div>
+							
+								<div class="col-sm-3 col-xs-6">
+									<div class="f_block fm4">
+										<a href="vozvrat.html">Возврат товара</a>
+									</div>	
+								</div>	
+							
+			
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</div>	
+		
+
+			
+	<div class="section s8">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12  clearfix">
+				
+					<div class="footer black center">
+						<div class="black d1">
+							Узнайте больше о скидках компании: <span class="comagic_phone">8 (495) 236-79-99</span>
+						</div>
+						<div class="black d2">
+							e-mail: info@nedorogiepotolki.ru
+							
+						</div>
+						<div class="d3">
+							Copyright &copy; 2009&mdash;2018 Недорогие Потолки
+						</div>
+					</div>
+				
+	
+				</div>
+			</div>			
+		</div>
+	</div>	
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="js\jquery-ui.min.js"></script>
+	<script src="libs\jquery\jquery.inputmask.min.js"></script>
+	<script src="libs\jquery-mousewheel\jquery.mousewheel.min.js"></script>
+<!--	<script src="/libs/fancybox/jquery.fancybox.pack.js"></script> -->
+<!--	<script src="/libs/waypoints/waypoints-1.6.2.min.js"></script>  -->
+<!--	<script src="/libs/scrollto/jquery.scrollTo.min.js"></script> -->
+	<script src="libs\owl-carousel\owl.carousel.min.js"></script>
+	<script src="libs\countdown\jquery.plugin.js"></script>
+<!--	<script src="/libs/countdown/jquery.countdown.min.js"></script> -->
+	<script src="libs\count2\jquery.countdown.js"></script>
+	<!-- <script src="libs/countdown/jquery.countdown-ru.js"></script> -->
+<!--	<script src="/libs/landing-nav/navigation.js"></script> -->
+<!--	<script src="/libs/jquery.lockfixed.js"></script> -->
+	<script src="libs\jquery\jquery.ui.touch-punch.min.js"></script>
+	 <script src="js\jquery.cookie.js"></script>
+	
+
+	
+	
+	<script src="js\common.js"></script>
+	
+	
+	
+
+
+
+<script>
+
+$(document).ready(function() {
+
+var wblocks = $('.w_blocks').children();
+	wblocks.addClass('hidden');	
+
+	var wblocks = $('.stroki').children();
+	wblocks.addClass('hidden');	
+})
+
+
+$(function() {
+
+alignCenter($('#popup1'));
+
+alignCenter($('#spasibo'));
+alignCenter($('#pozdr'));
+
+$(window).resize(function() {
+    alignCenter($('#popup1'));
+    alignCenter($('#spasibo'));
+    alignCenter($('#pozdr'));
+})
+
+
+$('#hide-layout').click(function() {
+    $('#hide-layout, #popup1,#popup2_kupon').fadeOut(300);
+    $('.pop_name').val('Ваше имя');
+    $('.pop_tel').val('Телефон');
+})
+
+
+$('#callback-spasibo, #hide-layout').click(function() {
+$('#hide-layout, #spasibo').fadeOut(300);
+
+$('.pop_name').val('');
+$('.pop_tel').val('');
+})
+
+function alignCenter(elem) {
+elem.css({
+left: ($(window).width() - elem.width()) / 2  + 'px',
+top: 50 + 'px'   
+})
+}
+
+
+})
+
+
+$(function() {
+	
+
+	
+
+				
+			
+		$('.pop_name').blur(function()	
+		{
+			if 	($('.pop_name').val()=='')
+			{
+				$('.pop_name').val('Ваше имя');
+				
+			}
+		});
+		$('.pop_tel').blur(function()	
+		{
+			if 	($('.pop_tel').val()=='')
+			{
+				$('.pop_tel').val('Телефон');
+				
+			}
+		});				 
+			
+		
+	
+		$('.v_name').blur(function()	
+		{
+			if 	($('.v_name').val()=='')
+			{
+				$('.v_name').val('Ваше имя');
+			
+			}
+		});
+		$('.v_tel').blur(function()	
+		{
+			if 	($('.v_tel').val()=='')
+			{
+				$('.v_tel').val('Телефон');
+				
+			}
+		});	
+
+			
+	});
+
+	
+    $(function(){
+	if (!$.cookie('was'))
+	{
+	
+            $( "#pozdr" ).delay( 30000 ).fadeIn( 400 );
+            $( "#hide-layout_pozdr" ).delay( 30000 ).fadeIn( 400 );
+
+            setTimeout(timer,30000);
+	  
+	}
+
+	
+})
+
+
+function timer(){
+ var obj=document.getElementById('sec');
+ obj.innerHTML--;
+  
+ if(obj.innerHTML==0){$('.pozdr .f-close').click();}
+ else{setTimeout(timer,1000);}
+}
+
+
+
+
+$('.pozdr .f-close').click(function(){
+	$( "#pozdr" ).fadeOut( 400 );
+		$( "#hide-layout_pozdr" ).fadeOut( 400 );
+	 $.cookie('was', true, {  
+			expires: 1,  
+			path: '/'  
+		  });   
+	
+})
+
+$('.popup1 .f-close').click(function(){
+	$( "#popup1" ).fadeOut( 400 );
+		$( "#hide-layout" ).fadeOut( 400 );
+	
+})
+
+$('.popup2_kupon .f-close').click(function(){
+	$( "#popup2_kupon" ).fadeOut( 400 );
+		$( "#hide-layout" ).fadeOut( 400 );
+	
+})
+</script>
+
+
+
+
+    </body>
+</html>

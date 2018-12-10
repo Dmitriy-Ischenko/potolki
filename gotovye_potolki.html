@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Натяжные потолки на заказ по индивидуальным размерам</title> 
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='yandex-verification' content='5006c6ed7df33acb'>
+    <meta name="google-site-verification" content="sOvrp_ZsCWy8w6xkvK6hOWGPh7By-63oawjPkRGcSuU">
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+
+	
+	<link rel="stylesheet" href="css\reset.css">
+	<link rel="stylesheet" href="css\jquery-ui.css">
+	<link rel="stylesheet" href="libs\bootstrap\bootstrap-grid-3.3.1.min.css">
+	<link rel="stylesheet" href="libs\font-awesome-4.2.0\css\font-awesome.min.css">
+	<link rel="stylesheet" href="libs\fancybox\jquery.fancybox.css">
+	<link rel="stylesheet" href="libs\owl-carousel\owl.carousel.css">
+	<link rel="stylesheet" href="libs\owl-carousel\owl.theme.default.css">
+	<link rel="stylesheet" href="libs\countdown\jquery.countdown.css">
+	<link rel="stylesheet" href="css\fonts.css">
+	<link rel="stylesheet" href="css\main2.css">
+	<link rel="stylesheet" href="css\media.css">
+
+	
+	
+	<script src="libs\jquery\jquery-1.11.1.min.js"></script>
+	<script src="js\jquery.lockfixed.min.js"></script>
+		
+
+
+ 	
+
+<script>
+	function SendComagic(name,tel,type,txt)
+	{
+	try {
+			if (txt=='')
+			{		
+				Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
+			}
+			else
+			{
+				Comagic.push(['addOfflineRequest', {name: name,  phone: tel, email: txt , message: type }]);
+			}
+		} catch(err){
+		return false;
+        }	
+				
+		}
+	
+</script><script>
+  $(function() {
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+        document.body.addEventListener('gesturestart', function () {
+          viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+        }, false);
+      }
+    }
+	
+  })
+</script>
+
+
+</head>
+<body>
+<div class="toptop"></div>
+	<div id="popup1" class="popup1">
+		<div id="btn-close" class="f-close"> </div>
+		<div class="header ">ЗАКАЗАТЬ ЗВОНОК</div> 
+		<div class="header_sub"></div> 
+		
+		<input type="hidden" class="pop_type" value="">
+                <div class="razmetka1">
+                    <div class="low_name">
+                      <input class="pop_name" type="text" placeholder='Ваше имя' value=''>
+                    </div>
+                </div>
+		 <div class="razmetka1">
+                    <div class="low_email">
+                        <input class="pop_tel" type="text" placeholder='Телефон' value=''>
+                    </div>
+                 </div>
+      
+        
+                <div class="blue_btn">
+                    <a id="callback-send1">Жду звонка</a>
+                </div>
+		 
+	</div> 
+	<div id="spasibo" class="spasibo">
+		<div class="header">СПАСИБО!</div> 
+		<div class="p1_msg">
+			Ваша заявка отправлена успешно.
+		</div>
+
+		<a id="callback-spasibo" class="btn b_red">ЗАКРЫТЬ</a>
+		 
+	</div>    
+
+
+
+	<div id="pozdr" class="pozdr">
+		<div id="btn-close" class="f-close"> </div>
+		<div class="header ">ПОЗДРАВЛЯЕМ</div> 
+		<div class="header_sub">
+			Вы стали победителем ежедневного розыгрыша среди посетителей сайта!
+			Заполните форму ниже и получите дополнительную скидку 10%!
+ 		</div>
+                 <div class="razmetka1">
+                    <div class="low_name">
+                        <input class="pozdr_name" type="text" value='' placeholder="Ваше имя">
+                    </div>
+                 </div>
+                <div class="razmetka1">
+                    <div class="low_tel">
+                        <input class="pozdr_tel" type="text" value='' placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="blue_btn">
+                    <a id="callback-pozdr">Отправить</a>
+                </div>
+		
+		 <div class="sec">Окно закроется через <span id="sec">60</span> секунд</div>
+	</div> 		
+	
+	<div id="hide-layout" class="hide-layout"></div>
+	<div id="hide-layout_pozdr" class="hide-layout"></div>
+
+
+     
+ 
+
+		
+
+<div class="section s_top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12  clearfix padding0">
+				<div class="col-sm-6 col-md-4 col-xs-6 logo">
+                                    <a href="index.html"><img src="img\logo2.png"></a>
+				</div>
+				<div class="col-sm-6 col-md-8 col-xs-6">
+					<div class="row">
+						<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+							<div class="moscow">
+								Москва<br>
+								<span class="under">- - - - - - - - - -</span>
+							</div>	
+						</div>
+						<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+							<div class="rasprod">
+                                                            <a href="skidki_na_potolki.html">Распродажа</a><br>
+							<!--	<span class="under">- - - - - - - - - - - -</span> -->
+							</div>	
+						</div>
+						<div class="hidden-sm col-md-12 col-lg-6 hidden-xs ">
+							<div class="tel">
+								<p class="">
+									<a class="comagic_phone" href="tel:+74952367999" style="text-decoration:none;">8 (495) 236-79-99</a>
+									
+								</p>
+								<div class="call" onclick="callback_tel();  return false;">Вам перезвонить?
+									</div>
+							</div>
+						</div>  
+						<div class="col-sm-12 hidden-md hidden-lg col-xs-12 mmenu">
+							Меню<img src="img\mmenu.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 padding0">
+							<div class="menu clearfix">
+								<div class="dop_menu clearfix">
+									<a href="#" onclick="callback_zamer();  return false;"><img src="img\m1.png"><span>Замер</span></a>
+									<a href="potolki_v_rassrochku.html"><img src="img\m2.png"><span>Рассрочка</span></a>
+									<a href="skidki_na_potolki.html"><img src="img\m3.png"><span>Акции</span></a>
+									<a href="gde_kupit_potolki.html"><img src="img\m4.png"><span>Контакты</span></a>
+									
+								</div>
+								<a href="#" class="m_close"><img src="img\m_close.png"></a>
+								<ul>
+									<li>
+										<div style="margin-right: 16px; margin-left: 5px;">Натяжные потолки</div>
+										<ul style="left:5px">
+											<li><div><a href="matovye_potolki.html">Матовые потолки</a></div></li>
+											<li><div><a href="glyancevye_potolki.html">Глянцевые потолки</a></div></li>
+											<li><div><a href="tkanevye_potolki.html">Тканевые потолки</a></div></li>
+											<li><div><a href="mnogourovnevye_potolki.html">Многоуровневые потолки</a></div></li>
+											<li><div><a href="potolki_fotopechat.html">Потолки с фотопечатью</a></div></li>
+											<li><div><a href="potolki_zvezdnoe_nebo.html">Потолки "Звездное небо"</a></div></li>
+										</ul>
+									
+									</li>
+									<li><div class="dop_css1"><a href="natjazhnye_potolki_kalkuljator.html">Цены на потолки</a></div>
+                                                                            <ul>
+                                                                                <li><div><a href="gotovye_potolki.html">Готовые потолки</a></div></li>
+                                                                            </ul>
+                                                                        </li>
+									<li><div><a href="o_kompanii.html">О компании</a></div></li>
+									<li class="noseparator m_last"><div><a href="gde_kupit_potolki.html">Контакты</a></div></li>
+								</ul>
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="b_line">
+					<div class="menu_place clearfix">
+						<div class="tel">
+							<a class="comagic_phone" href="tel:+74952367999" style="text-decoration:none;">8 (495) 236-79-99</a>
+						</div>
+						<div class="call" onclick="callback_tel(); return false;">Вам перезвонить?</div>
+						
+						<div class="trubka">
+							<a href="tel:+74952367999">
+								<img src="img\trubka.png">
+							</a>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="probel">
+</div>
+
+
+
+<script>
+$(".mmenu").click(function(){
+	if (!$(".menu").hasClass('show'))
+	{
+		$(".menu").addClass('show');
+	}
+});
+
+$(".m_close").click(function(){
+	$(".menu").removeClass('show');
+	return false;
+})
+
+
+</script>
+        
+      
+
+<div class="section s_market">
+	<div class="container">
+		<div class="row">
+                    <div class="col-sm-12  clearfix">
+                       <h1 class="">Готовые натяжные потолки</h1>	
+                       <p class="light">
+                           Компания «Недорогие Потолки» рада предложить натяжные потолки по индивидуальным размерам на заказ. Благодаря собственному производству, срок изготовления изделий составляет всего 1 рабочий день, а стоимость самая минимальная на рынке!
+                       </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cat_menu">
+                        <a href="gotovye_potolki.html"><img src="img\cat_menu\all_current.png"></a>
+                        <a href="gotovye_potolki\cat1.html"><img src="img\cat_menu\mat.png"></a>
+                        <a href="gotovye_potolki\cat2.html"><img src="img\cat_menu\gl.png"></a>
+                        <a href="gotovye_potolki\cat3.html"><img src="img\cat_menu\tk.png"></a>
+                        <a href="gotovye_potolki\cat4.html"><img src="img\cat_menu\ur.png"></a>
+                        <a href="gotovye_potolki\cat5.html"><img src="img\cat_menu\foto.png"></a>
+                        <a href="gotovye_potolki\cat6.html"><img src="img\cat_menu\stars.png"></a>
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="row">
+                                            <div class="col-sm-6  clearfix">
+                            <div class="market_block clearfix">
+                                <h3>Матовые натяжные потолки</h3>
+                                <div class="col-lg-6">
+                                    <div class="c_border">
+                                                                                <div class="red_lenta"></div>
+                                                                                <img src="img\market\img_m1.png">                                    
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                    <div class="m_sub ">
+                                        <div class='razmer'>Размер: 100x100 см</div>
+
+                                        <div class="old_price"><div class="red_line"></div>236<span> руб.</span></div>
+                                        <div class="current_price">99<span> руб.</span></div>
+                                        <div class="yellow_btn">
+                                             <a href="market\1.html">Купить</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-sm-6  clearfix">
+                            <div class="market_block clearfix">
+                                <h3>Глянцевые натяжные потолки</h3>
+                                <div class="col-lg-6">
+                                    <div class="c_border">
+                                                                                <div class="red_lenta"></div>
+                                                                                <img src="img\market\img_m2.png">                                    
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                    <div class="m_sub ">
+                                        <div class='razmer'>Размер: 100x100 см</div>
+
+                                        <div class="old_price"><div class="red_line"></div>310<span> руб.</span></div>
+                                        <div class="current_price">130<span> руб.</span></div>
+                                        <div class="yellow_btn">
+                                             <a href="market\2.html">Купить</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-sm-6  clearfix">
+                            <div class="market_block clearfix">
+                                <h3>Тканевые натяжные потолки</h3>
+                                <div class="col-lg-6">
+                                    <div class="c_border">
+                                                                                <div class="red_lenta"></div>
+                                                                                <img src="img\market\img_m52.png">                                    
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                    <div class="m_sub ">
+                                        <div class='razmer'>Размер: 100x100 см</div>
+
+                                        <div class="old_price"><div class="red_line"></div>1405<span> руб.</span></div>
+                                        <div class="current_price">590<span> руб.</span></div>
+                                        <div class="yellow_btn">
+                                             <a href="market\52.html">Купить</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-sm-6  clearfix">
+                            <div class="market_block clearfix">
+                                <h3>Сатиновые натяжные потолки</h3>
+                                <div class="col-lg-6">
+                                    <div class="c_border">
+                                                                                <div class="red_lenta"></div>
+                                                                                <img src="img\market\img_m5.png">                                    
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                    <div class="m_sub ">
+                                        <div class='razmer'>Размер: 100x100 см</div>
+
+                                        <div class="old_price"><div class="red_line"></div>286<span> руб.</span></div>
+                                        <div class="current_price">120<span> руб.</span></div>
+                                        <div class="yellow_btn">
+                                             <a href="market\5.html">Купить</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-sm-6  clearfix">
+                            <div class="market_block clearfix">
+                                <h3>Натяжные потолки с фотопечатью</h3>
+                                <div class="col-lg-6">
+                                    <div class="c_border">
+                                                                                <div class="red_lenta"></div>
+                                                                                <img src="img\market\img_m53.png">                                    
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                    <div class="m_sub ">
+                                        <div class='razmer'>Размер: 100x100 см</div>
+
+                                        <div class="old_price"><div class="red_line"></div>1667<span> руб.</span></div>
+                                        <div class="current_price">700<span> руб.</span></div>
+                                        <div class="yellow_btn">
+                                             <a href="market\53.html">Купить</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-sm-6  clearfix">
+                            <div class="market_block clearfix">
+                                <h3>Многоуровневые натяжные потолки</h3>
+                                <div class="col-lg-6">
+                                    <div class="c_border">
+                                                                                <div class="red_lenta"></div>
+                                                                                <img src="img\market\img_m33.png">                                    
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6">
+                                    <div class="m_sub ">
+                                        <div class='razmer'>Размер: 100x100 см</div>
+
+                                        <div class="old_price"><div class="red_line"></div>1405<span> руб.</span></div>
+                                        <div class="current_price">590<span> руб.</span></div>
+                                        <div class="yellow_btn">
+                                             <a href="market\33.html">Купить</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            
+        </div>
+
+
+    <div class="pagenation">
+     <span class="current_link">1</span><a class="p_link" href="gotovye_potolki\index.html?p=2">2</a><a class="p_link" href="gotovye_potolki\index-1.html?p=3">3</a><a class="p_link" href="gotovye_potolki\index-2.html?p=4">4</a><a class="p_link" href="gotovye_potolki\index-3.html?p=5">5</a><a class="p_link" href="gotovye_potolki\index-4.html?p=6">6</a>    </div>	
+    
+</div>    	
+
+<div class="section s_otable">
+	<div class="container">
+		<div class="row">
+                    <div class="col-sm-12  clearfix">
+                        <table>
+                            <tr>
+                                <th>Тип натяжного<br>потолка</th>
+                                <th>Срок<br>изготовления</th>
+                                <th>Цена за 1м<sup>2</sup></th>
+                                <th>Гарантия</th>
+                                <th class="small_hide" style="border:none;">Производитель</th>
+                            </tr>
+                            <tr>
+                                <td>Матовый</td>
+                                <td>от 1 дня</td>
+                                <td><div class="o_best_price"></div>от 99 руб.</td>
+                                <td><img src="img\7let.png"></td>
+                                <td class="small_hide" style="border:none;"><img src="img\mat_pro.png"></td>
+                            </tr>
+                            <tr>
+                                <td>Глянцевый</td>
+                                <td>от 1 дня</td>
+                                <td>от 130 руб.</td>
+                                <td><img src="img\7let.png"></td>
+                                <td class="small_hide" style="border:none;"><img src="img\gl_pro.png"></td>
+                            </tr>
+                            <tr>
+                                <td>Сатиновый</td>
+                                <td>от 1 дня</td>
+                                <td>от 130 руб.</td>
+                                <td><img src="img\7let.png"></td>
+                                <td class="small_hide" style="border:none;"><img src="img\satin_pro.png"></td>
+                            </tr>
+                            <tr>
+                                <td>Тканевый</td>
+                                <td>от 1 дня</td>
+                                <td>от 590 руб.</td>
+                                <td><img src="img\12let.png"></td>
+                                <td class="small_hide" style="border:none;"><img src="img\tkan_pro.png"></td>
+                            </tr>
+                            <tr>
+                                <td>С фотопечатью</td>
+                                <td>от 1 дня</td>
+                                <td>от 700 руб.</td>
+                                <td><img src="img\20let.png"></td>
+                                <td class="small_hide" style="border:none;"><img src="img\foto_pro.png"></td>
+                            </tr>
+                            <tr style="border:none;">
+                                <td>Звездное небо</td>
+                                <td>от 3 дней</td>
+                                <td>от 750 руб.</td>
+                                <td><img src="img\20let.png"></td>
+                                <td class="small_hide" style="border:none;"><img src="img\zn_pro.png"></td>
+                            </tr>
+                           
+                            
+                            
+                            
+                        </table>
+                    </div>
+                </div>
+        </div>
+</div>	
+
+<div class="section s_form5min">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12  clearfix">
+				<h1 class="">Рассчитаем ваш заказ за 5 минут!</h1>	
+				
+				<div class=" col-md-12  zakaz_5min clearfix">
+					<div class="razmetka1">
+						<div class="low_name">	
+							<input class="v_name" type="text" value="" placeholder="Ваше имя">
+						</div>	
+					</div>
+					<div class="razmetka1">		
+						<div class="low_tel">					
+							<input class="v_tel" type="text" value="" placeholder="Телефон">
+						</div>
+					</div>	
+					<div class="razmetka1_1">
+						<div class="blue_btn">
+							<a id="zakaz_5min" class="">Отправить заявку</a>
+						</div>	
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>		
+</div>		
+<script>
+
+</script>	
+		<div class="section s23">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12  clearfix">
+						<div class="footer_menu">
+							
+								<div class="col-sm-3 col-xs-6">
+									<div class="f_block fm1">
+										<a href="natjazhnye_potolki_kalkuljator.html">Расчет онлайн</a>
+									</div>
+								</div>
+					
+								<div class="col-sm-3 col-xs-6 ">
+									<div class="f_block fm2">
+										<a href="skidki_na_potolki.html">Как сэкономить</a>
+									</div>	
+								</div>
+						
+								<div class="col-sm-3 col-xs-6">
+									<div class="f_block fm3">
+										<a href="potolki_v_rassrochku.html">Купить в рассрочку</a>
+									</div>
+								</div>
+							
+								<div class="col-sm-3 col-xs-6">
+									<div class="f_block fm4">
+										<a href="vozvrat.html">Возврат товара</a>
+									</div>	
+								</div>	
+							
+			
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</div>	
+		
+
+			
+	<div class="section s8">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12  clearfix">
+				
+					<div class="footer black center">
+						<div class="black d1">
+							Узнайте больше о скидках компании: <span class="comagic_phone">8 (495) 236-79-99</span>
+						</div>
+						<div class="black d2">
+							e-mail: info@nedorogiepotolki.ru
+							
+						</div>
+						<div class="d3">
+							Copyright &copy; 2009&mdash;2018 Недорогие Потолки
+						</div>
+					</div>
+				
+	
+				</div>
+			</div>			
+		</div>
+	</div>	
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="js\jquery-ui.min.js"></script>
+	<script src="libs\jquery\jquery.inputmask.min.js"></script>
+	<script src="libs\jquery-mousewheel\jquery.mousewheel.min.js"></script>
+<!--	<script src="/libs/fancybox/jquery.fancybox.pack.js"></script> -->
+<!--	<script src="/libs/waypoints/waypoints-1.6.2.min.js"></script>  -->
+<!--	<script src="/libs/scrollto/jquery.scrollTo.min.js"></script> -->
+	<script src="libs\owl-carousel\owl.carousel.min.js"></script>
+	<script src="libs\countdown\jquery.plugin.js"></script>
+<!--	<script src="/libs/countdown/jquery.countdown.min.js"></script> -->
+	<script src="libs\count2\jquery.countdown.js"></script>
+	<!-- <script src="libs/countdown/jquery.countdown-ru.js"></script> -->
+<!--	<script src="/libs/landing-nav/navigation.js"></script> -->
+<!--	<script src="/libs/jquery.lockfixed.js"></script> -->
+	<script src="libs\jquery\jquery.ui.touch-punch.min.js"></script>
+	 <script src="js\jquery.cookie.js"></script>
+	
+
+	
+	
+	<script src="js\common.js"></script>
+	
+	
+	
+
+
+
+<script>
+
+$(document).ready(function() {
+
+var wblocks = $('.w_blocks').children();
+	wblocks.addClass('hidden');	
+
+	var wblocks = $('.stroki').children();
+	wblocks.addClass('hidden');	
+})
+
+
+$(function() {
+
+alignCenter($('#popup1'));
+
+alignCenter($('#spasibo'));
+alignCenter($('#pozdr'));
+
+$(window).resize(function() {
+    alignCenter($('#popup1'));
+    alignCenter($('#spasibo'));
+    alignCenter($('#pozdr'));
+})
+
+
+$('#hide-layout').click(function() {
+    $('#hide-layout, #popup1,#popup2_kupon').fadeOut(300);
+    $('.pop_name').val('Ваше имя');
+    $('.pop_tel').val('Телефон');
+})
+
+
+$('#callback-spasibo, #hide-layout').click(function() {
+$('#hide-layout, #spasibo').fadeOut(300);
+
+$('.pop_name').val('');
+$('.pop_tel').val('');
+})
+
+function alignCenter(elem) {
+elem.css({
+left: ($(window).width() - elem.width()) / 2  + 'px',
+top: 50 + 'px'   
+})
+}
+
+
+})
+
+
+$(function() {
+	
+
+	
+
+				
+			
+		$('.pop_name').blur(function()	
+		{
+			if 	($('.pop_name').val()=='')
+			{
+				$('.pop_name').val('Ваше имя');
+				
+			}
+		});
+		$('.pop_tel').blur(function()	
+		{
+			if 	($('.pop_tel').val()=='')
+			{
+				$('.pop_tel').val('Телефон');
+				
+			}
+		});				 
+			
+		
+	
+		$('.v_name').blur(function()	
+		{
+			if 	($('.v_name').val()=='')
+			{
+				$('.v_name').val('Ваше имя');
+			
+			}
+		});
+		$('.v_tel').blur(function()	
+		{
+			if 	($('.v_tel').val()=='')
+			{
+				$('.v_tel').val('Телефон');
+				
+			}
+		});	
+
+			
+	});
+
+	
+    $(function(){
+	if (!$.cookie('was'))
+	{
+	
+            $( "#pozdr" ).delay( 30000 ).fadeIn( 400 );
+            $( "#hide-layout_pozdr" ).delay( 30000 ).fadeIn( 400 );
+
+            setTimeout(timer,30000);
+	  
+	}
+
+	
+})
+
+
+function timer(){
+ var obj=document.getElementById('sec');
+ obj.innerHTML--;
+  
+ if(obj.innerHTML==0){$('.pozdr .f-close').click();}
+ else{setTimeout(timer,1000);}
+}
+
+
+
+
+$('.pozdr .f-close').click(function(){
+	$( "#pozdr" ).fadeOut( 400 );
+		$( "#hide-layout_pozdr" ).fadeOut( 400 );
+	 $.cookie('was', true, {  
+			expires: 1,  
+			path: '/'  
+		  });   
+	
+})
+
+$('.popup1 .f-close').click(function(){
+	$( "#popup1" ).fadeOut( 400 );
+		$( "#hide-layout" ).fadeOut( 400 );
+	
+})
+
+$('.popup2_kupon .f-close').click(function(){
+	$( "#popup2_kupon" ).fadeOut( 400 );
+		$( "#hide-layout" ).fadeOut( 400 );
+	
+})
+
+</script>
+
+
+
+
+    </body>
+</html>
